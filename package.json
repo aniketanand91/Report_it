@@ -1,0 +1,30 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/aniketanand91/report_it.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aniketanand91/report_it/issues"
+  },
+  "homepage": "https://github.com/aniketanand91/report_it#readme",
+  "dependencies": {
+    "cloudinary": "^1.36.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "mapmyindia-sdk-nodejs": "^1.1.0",
+    "moment-timezone": "^0.5.43",
+    "multer": "^1.4.5-lts.1",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.22"
+  }
+}

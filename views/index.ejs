@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <!-- <script src="/path/to/cdn/jquery.min.js"></script> -->
+    <!-- <script src="/path/to//js/form-to-json.js"></script> -->
+    <title>report-it</title>
+    <script src="https://apis.mapmyindia.com/advancedmaps/v1/ccb3adfc1777721be99a938d4604c889/map_load?v=1.3"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="main-logo"></div>
+        <form id="login-form" action="" method="POST" enctype="multipart/form-data" >
+            <input type="text" name="phone_no" id="phone-no" class="login-form-field" placeholder="Reporter's Phone Number" required>
+            <br>
+            <input type="text" name="pin_code" id="pin-code" class="login-form-field" placeholder="Pincode" required><br>
+            <input type="text" name="land_mark" id="land-mark" class="login-form-field" placeholder="Incident Landmark" required><br><br><br><br>
+            <label for="picture">Take a picture of the accident :</label><br><br>
+            <input id="environment" type="file" name="picture" accept="image/*" capture="environment" required>
+            <br><br><br>
+            <!-- <input type="submit" formaction="../report_it/submission_page.html" value="Report a Case" class="login-form-field" id="login-form-submit"><br> -->
+            <input type="submit" value="Report a Case" class="login-form-field" id="login-form-submit"><br>
+            <label>Your contact detail will be shared with the near police <br> station, in case the department want more <br> detail regarding the incident.</label> <br><br><br><br>
+            <!-- <button onclick="getLocation()" name="location">Get Location</button> -->
+            <!-- <p class="extra-detail" style="font-size: 22px;">Wanna Stay Anonymous <label class="switch"> <input type="checkbox" name="hide_detail" id="hide_detail" onclick="onClickHandler()"> <span class="slider round"></span> </label></p>  -->
+            <!-- <p class="extra-detail" style="font-size: 22px;">Wanna Stay Anonymous <label class="switch"> <input type="checkbox" name="hide_detail" id="hide_detail" onclick="myFunction()"> <span class="slider round"></span> </label></p> -->
+            <!-- <p class="extra-detail" style="font-size: 22px;">Wanna Stay Anonymous <label class="switch"> <input type="checkbox" name="hide_detail" id="hide_detail" onclick='handleClick(this);'> <span class="slider round"></span> </label></p> -->
+            <!-- <p class="extra-detail" style="font-size: 22px;">Share the incident location detail <label class="switch"> <input type="checkbox" name="hide_detail" id="hide_detail" onclick='handleClick(this);'> <span class="slider round"></span> </label></p> -->
+        </form>
+    </div>
+    <p class="result-json-output"></p>
+
+    
+    <script src="report-it-main"></script>
+
+</body>
+</html>

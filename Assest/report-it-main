@@ -1,0 +1,26 @@
+var img = new Image();
+img.src = 'report-it-logo.png';
+let logo = document.getElementById("main-logo");
+logo.append(img);
+
+// function onClickHandler(){
+//     var chk=document.getElementById("box").value.checked;
+// }
+
+// function myFunction() {
+//     var x = document.getElementById("myCheck").checked;
+// }
+
+// function handleClick(checkbox) {
+//     if(checkbox.checked){
+//         console.log(checkbox.value+"True")
+//     }
+//     else{
+//         console.log(checkbox.value+"False")
+//     }
+// }
+
+
+// function handleClick(cb) {
+//     display("Clicked, new value = " + cb.checked);
+//   }
